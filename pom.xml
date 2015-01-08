@@ -17,7 +17,8 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <jersey-version>2.7</jersey-version>
-        <jetty-version>9.2.0.RC0</jetty-version>
+        <jetty-version>9.2.6.v20141205</jetty-version>
+        <main.class>eu.fusepool.p3.transformer.web.client.server.Main</main.class>
         <finalName>${project.artifactId}-${project.version}</finalName>
     </properties>
     

@@ -1,0 +1,11 @@
+language: java
+before_install: mvn install -DskipTests=true -DfinalName=transformer-web-client-$TRAVIS_TAG
+deploy:
+  edge: true
+  provider: releases
+  api-key:
+    - secure: Uc4DP5y5XwNA4w2jdIFSt/3NxBq1FSGw7f03v4ZKoJPYgLMpG739ZdKJvHgJv1Nk5e36h6vfO5yKECLw90AXJe56U/xr7Xtu/WIX3N4C7fbvkfNMFc6OJoA1aPwmynC4IUwO2kOsF4RJSJkLVjd0+6uOxIbPDIN8ia7vQZl+YXQ=
+  file: target/transformer-web-client-$TRAVIS_TAG-jar-with-dependencies.jar
+  on:
+    tags: true
+    all_branches: true
