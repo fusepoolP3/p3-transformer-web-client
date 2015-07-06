@@ -14,21 +14,21 @@ this is that it can take a long time until a request is answered.
 
 The web client can be started using the latest release that can be downloaded from the releases section. The executable jar file contains all the necessary dependencies. To start the client, run the jar-file as follows:
 
- java -jar transformer-web-client-*-jar-with-dependencies.jar
+    java -jar transformer-web-client-*-jar-with-dependencies.jar
 
 The web client can then be accessed on port 8151 of your machine. As an example, using the dictionary-matcher-transformer running on FusepoolP3's infrastructure, try the following URL:
 
-http://localhost:8151/?transformer=http%3A%2F%2Fsandbox.fusepool.info%3A8301%2F%3Ftaxonomy%3Dhttp%3A%2F%2Fdata.nytimes.com%2Fdescriptors.rdf&resource=http://www.bbc.com/news/science-environment-30005268
+    http://localhost:8151/?transformer=http%3A%2F%2Fsandbox.fusepool.info%3A8301%2F%3Ftaxonomy%3Dhttp%3A%2F%2Fdata.nytimes.com%2Fdescriptors.rdf&resource=http://www.bbc.com/news/science-environment-30005268
 
 ## Compiling and Running
 
 After obtaining the sources, the web client can be built using maven:
 
- mvn install
+    mvn install
 
 To start the web client, use the following command:
 
- mvn exec:java
+    mvn exec:java
 
 ## Usage
 
